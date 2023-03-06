@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",                                  
+    "experimentalDecorators": true,
+    "module": "commonjs",                               
+    "skipLibCheck": true,
+    "types": ["node", "jest"],
+    "rootDir": "src",
+    "baseUrl": "./src",
+    "paths": {
+        "src/*": ["src/*"],
+        "src/katas": ["src/katas"],
+    },
+    "moduleDetection": "auto",
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "sourceMap": true,
+    "inlineSourceMap": false,
+    "outDir": "./dist",
+    "lib": ["es6", "dom", "esnext", "esnext.asynciterable"],                              
+  },
+  "include": ["src/**/*.ts"],
+  "exclude": ["./node_modules/*","src/**/*.test.ts"]
+}
