@@ -1,14 +1,6 @@
 export const countSquares = (cuts: number) => {
-    let result = 0;
-    switch(cuts) {
-        case 2: {
-            result = 26;
-            break;
-        }
-        case 4: {
-            result = 98;
-            break;
-        }
-    }
-    return result;
+    if (cuts === 0) return 1;
+    if (cuts === 1) return 8;
+    const squaresInFacade = Math.pow(cuts + 1, 2);
+    return  (squaresInFacade * 2) + (4 * cuts * (cuts - 1));
 }
