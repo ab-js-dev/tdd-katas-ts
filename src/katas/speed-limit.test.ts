@@ -11,6 +11,10 @@ describe('speed limit function', () => {
         expect(speedLimit(100, [110, 100, 80])).toBe(250);
     })
 
+
+it('Should return 250 if speed is 100 and signals are [110, 100, 80]', ()=>{
+    expect(speedLimit(100, [110, 100, 80])).toBe(250);
+})
     it('Should return 250 if speed is 120 and signals are [110, 100, 80]', ()=>{
         expect(speedLimit(120, [110, 100, 80])).toBe(850);
     })
